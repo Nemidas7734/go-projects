@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <nav>
+        <ul>
+            <li><a href="length.html">Length Converter</a></li>
+            <li><a href="weight.html">Weight Converter</a></li>
+            <li><a href="temperature.html">Temperature Converter</a></li>
+        </ul>
+    </nav>
+    <h1>Weight Converter</h1>
+    <form id="weightForm">
+        <label for="value">Value to Convert</label>
+        <input type="number" id="value" placeholder="Enter value">
+        
+        <label for="fromUnit">Convert From</label>
+        <select id="fromUnit">
+            <option value="milligram">Milligram (mg)</option>
+            <option value="gram">Gram (g)</option>
+            <option value="kilogram">Kilogram (kg)</option>
+            <option value="ounce">Ounce (oz)</option>
+            <option value="pound">Pound (lb)</option>
+        </select>
+
+        <label for="toUnit">Convert To</label>
+        <select id="toUnit">
+            <option value="milligram">Milligram (mg)</option>
+            <option value="gram">Gram (g)</option>
+            <option value="kilogram">Kilogram (kg)</option>
+            <option value="ounce">Ounce (oz)</option>
+            <option value="pound">Pound (lb)</option>
+        </select>
+
+        <button type="button" onclick="convertWeight()">Convert</button>
+    </form>
+    <div class="result" id="result"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
