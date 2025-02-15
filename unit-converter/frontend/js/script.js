@@ -23,10 +23,6 @@ function convertLength() {
         return;
     }
 
-    // let conversionFactor = lengthConversions[toUnit] / lengthConversions[fromUnit];
-    // const convertedValue = value * conversionFactor;
-    // resultDiv.innerHTML = `${value} ${fromUnit} = ${convertedValue} ${toUnit}`;
-
     fetch('http://localhost:8090/convert', {
         method: 'POST',
         headers: {
@@ -71,9 +67,6 @@ function convertWeight() {
         return;
     }
 
-    // let conversionFactor = weightConversions[toUnit] / weightConversions[fromUnit];
-    // const convertedValue = value * conversionFactor;
-    // resultDiv.innerHTML = `${value} ${fromUnit} = ${convertedValue} ${toUnit}`;
 
     fetch('http://localhost:8090/convert', {
         method: 'POST',
