@@ -11,8 +11,8 @@
     <div id="articles">
         {{range .}}
             <div class="article">
-                <h2><a href="/article/{{.Title}}">{{.Title}}</a></h2>
-                <p>Published on: {{.Date}}</p>
+                <h2><a href="/article/{{.ID}}">{{.Title}}</a></h2>
+                <p>Published on: {{.Date | formatDate}}</p>
             </div>
         {{end}}
     </div>

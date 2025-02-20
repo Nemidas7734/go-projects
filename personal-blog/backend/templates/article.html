@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <a href="/" class="back-link">Back to Home</a>
     <h1>{{.Title}}</h1>
-    <p>Published on: {{.Date}}</p>
+    <p>Published on: {{.Date | formatDate}}</p>
     <div class="content">
         <p>{{.Content}}</p>
     </div>
